@@ -40,7 +40,7 @@ function addGamesToPage(games) {
 
         // add the class game-card to the list
         
-        /*
+        /* another way of implementing elements
         let card = document.createElement("div");
         let current_game = games[i];
         let current_desc = document.createElement("p");
@@ -282,5 +282,7 @@ top_game_name2.innerText = game_2.name;
 secondGameContainer.appendChild(top_game_name2);
 
 // do the same for the runner up item
+
+document.title = "Sea Monster Treasury";
 
 //#endregion
