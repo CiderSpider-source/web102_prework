@@ -19,10 +19,11 @@ The following **required** functionality is completed:
 
 Here's a walkthrough of implemented features:
 
-<img src='https://imgur.com/xEdN7YV.gif' title='Video Walkthrough' width='500' alt='Video Walkthrough' />
+<!--<img src='https://imgur.com/a/7JQQcan' title='Video Walkthrough' width='' alt='Video Walkthrough' /> -->
+![](prework_demo.gif)
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with OBS then converted via imgur
+GIF created with OBS then converted via ezgif
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
