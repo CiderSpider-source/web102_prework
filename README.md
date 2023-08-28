@@ -25,7 +25,7 @@ Here's a walkthrough of implemented features:
 
 <!-- <img src='https://imgur.com/a/7JQQcan' title='Video Walkthrough' width='' alt='Video Walkthrough' /> -->
 
-![Video Walkthrough](./assets/prework_demo.gif)
+![Video Walkthrough](./assets/video_walkthrough.gif)
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with OBS then converted via ezgif
@@ -40,7 +40,7 @@ Using Git and doing commits for the first time was odd at first, but once I got 
 
 ## License
 
-    Copyright [2023] [CODEPATH*org]
+    Copyright [2023] [CODEPATH.org]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
