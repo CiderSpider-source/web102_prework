@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
 
 body {
-    font-family: 'Georgia';
+    font-family: 'Cabin';
     background-color: #758190;
 }
 
@@ -21,11 +21,9 @@ body {
 
 .stats-container {
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    cursor: pointer;
-    box-shadow: 0, 0, 30px, lightblue;
 }
-
 
 .stats-card {
     background-color: #a8b0bc;
@@ -34,6 +32,11 @@ body {
     margin: 1%;
     width: 100%;
     text-align: center;
+}
+
+.stats-card:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px lightblue;
 }
 
 #num-contributions, #total-raised, #num-games {

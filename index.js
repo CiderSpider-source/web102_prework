@@ -63,6 +63,8 @@ function addGamesToPage(games) {
 
         let current_game = games[i];
 
+        //console.log(current_game);
+
         let card = document.createElement("div");
        
         const display_game = {
@@ -108,7 +110,6 @@ function addGamesToPage(games) {
 // call the function we just defined using the correct variable
 // later, we'll call this function using a different list of games
 addGamesToPage(GAMES_JSON);
-
 //#endregion   
 
 //#region challenge 4
@@ -143,7 +144,7 @@ const total_contributions = GAMES_JSON.reduce((acc, game) => { return acc + game
 const formatted_contr = total_contributions.toLocaleString("en-US");
 
 
-raisedCard.innerText = "$ " + formatted_contr;
+raisedCard.innerText = "$" + formatted_contr;
 
 
 // grab number of games card and set its inner HTML
@@ -167,11 +168,11 @@ function filterUnfundedOnly() {
     deleteChildElements(gamesContainer);
 
     // use filter() to get a list of games that have not yet met their goal
-    let list_of_unfunded_games = GAMES_JSON.filter ( (game) => { return game.pledged <= game.goal;});
+    let list_of_unfunded_games = GAMES_JSON.filter ( (game) => { return game.pledged < game.goal;});
 
     // use the function we previously created to add the unfunded games to the DOM
     addGamesToPage(list_of_unfunded_games);
-    console.log(list_of_unfunded_games);
+    //console.log(list_of_unfunded_games);
 
 }
 
@@ -185,7 +186,7 @@ function filterFundedOnly() {
 
     // use the function we previously created to add unfunded games to the DOM
     addGamesToPage(list_of_funded_games);
-    console.log(list_of_funded_games);
+    //console.log(list_of_funded_games);
 }
 
 // show all games
@@ -230,7 +231,7 @@ let total_unfunded = unfunded_games.length;
 
 // create a string that explains the number of unfunded games using the ternary operator
 
-const display_str = `A total of $ ${formatted_contr} has been raised for ${total_games} games. Currently, ${total_unfunded > 1 ? total_unfunded + (" ") + "games remain unfunded. We need your help to fund these amazing games!"
+const display_str = `A total of $${formatted_contr} has been raised for ${total_games} games. Currently, ${total_unfunded > 1 ? total_unfunded + (" ") + "games remain unfunded. We need your help to fund these amazing games!"
  : total_unfunded + (" ") + "game remains unfunded. We need your help to fund these amazing games!"}`;
 
 let desc_info = document.createElement("p");
@@ -267,9 +268,9 @@ let game_1, game_2, rest;
 
 [game_1, game_2, ...rest] = sortedGames;
 
-console.log(game_1);
-console.log(game_2);
-console.log(rest);
+//console.log(game_1);
+//console.log(game_2);
+//console.log(rest);
 
 // create a new element to hold the name of the top pledge game, then append it to the correct element
 
